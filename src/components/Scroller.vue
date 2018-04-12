@@ -186,6 +186,7 @@
     props: {
       onRefresh: Function,
       onInfinite: Function,
+      scrollingComplete: Function,
 
       refreshText: {
         type: String,
@@ -317,7 +318,8 @@
         snapping: this.snapping,
         animating: this.animating,
         animationDuration: this.animationDuration,
-        bouncing: this.bouncing
+        bouncing: this.bouncing,
+        scrollingComplete: this.scrollingComplete
       })
 
       // enable PullToRefresh
