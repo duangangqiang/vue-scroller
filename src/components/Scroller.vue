@@ -319,7 +319,7 @@
         animating: this.animating,
         animationDuration: this.animationDuration,
         bouncing: this.bouncing,
-        scrollingComplete: this.scrollingComplete
+        scrollingComplete: this.scrollingComplete ? this.scrollingComplete : () => {}
       })
 
       // enable PullToRefresh
